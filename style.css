@@ -10,7 +10,11 @@
   color: #FFF !important;
 }
 
+
 .navbar-toggler {
-  background-color: #FFF;
-  color: #000;
+  background-color: #000;
+}
+
+.navbar-toggler-icon {
+  background-color: #fff;
 }
