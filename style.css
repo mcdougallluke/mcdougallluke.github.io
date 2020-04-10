@@ -40,10 +40,77 @@ body, html {
   border-radius: 30px
 }
 
-#icons {
-  background-color: white;
+.icons{
+  display: inline-block;
+  width: 90px;
+  margin: 0 5px;
+  cursor: pointer;
 }
 
-#icons:hover {
-  opacity: 0.1;
+.icons i{
+  font-size: 40px;
+  display: block;
+  text-align: center;
+  transition: .3s;
+}
+
+.icons span{
+  display: block;
+  width: 90px;
+  text-align: center;
+  padding: 9px 0;
+  color: white;
+  border-radius: 3px;
+  position: absolute;
+  bottom: -25px;
+  font-size: 15px;
+  opacity: 0;
+  transition: .3s opacity ease-in;
+  color: black;
+}
+.icons span:before{
+  position: absolute;
+  color: black;
+  height: 13px;
+  width: 13px;
+  top: 28px;
+  left: 50%;
+  z-index: -1;
+  transform: translateX(-50%) rotate(45deg);
+}
+
+
+.icons span.tw, .icons span.tw:before{
+  background: #ffffff;
+}
+.icons span.gh, .icons span.gh:before{
+  background: #ffffff;
+}
+.icons span.st, .icons span.st:before{
+  background: #ffffff;
+}
+
+.icons:hover > span{
+  opacity: 1;
+}
+
+a.nav-link:link
+{
+   color: #ffffff;
+   text-decoration: none;
+}
+a.nav-link:visited
+{
+   color: #ffffff;
+   text-decoration: none;
+}
+a.nav-link:hover
+{
+   color: #ffffff;
+   text-decoration: none;
+}
+a.nav-link:active
+{
+   color: #ffffff;
+   text-decoration: none;
 }
